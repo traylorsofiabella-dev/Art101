@@ -1,7 +1,49 @@
-p {color : green; font-size: large;}
+p {
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
 
-h1{text-align: center;}
+p strong {
+    font-weight: normal;
+}
 
-html{font-family: "Bitcount Grid Double"; background-color: pink;}
+h1 {
+    text-align: center;
+}
 
-p {padding: 5px;}
+html {
+    font-family: "Bitcount Grid Double";
+    background-color: pink;
+}
+
+p {
+    padding: 5px;
+}
+
+.highlight_01 {
+    background-color: rgb(235, 158, 207);
+}
+
+.highlight_02 {
+    background-color: rgb(43, 226, 58);
+}
+
+.highlight_03 {
+    background-color: blue;
+}
+
+#pink-small {
+    width: 50px
+}
+
+#pink-large {
+    width: 100px;
+}
+
+.test-div {
+    background-color: antiquewhite;
+    margin: 30px;
+    padding: 40px;
+}
+.my-flex{display: flex;}
