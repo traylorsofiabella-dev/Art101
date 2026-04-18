@@ -46,4 +46,7 @@ p {
     margin: 30px;
     padding: 40px;
 }
-.my-flex{display: flex;}
+
+.my-flex {
+    display: flex;
+}

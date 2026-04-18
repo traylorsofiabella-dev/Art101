@@ -1,14 +1,24 @@
+
 body {
     background: #e1f3f1;
     padding: 50px;
+    
 }
 
 h1,
 h2,
 h3 {
-    color: #1d1184;
-    font-family: sans-serif;
+    color: #e188d6;
+    font-family: "Bitcount Grid Double";
 }
+
 img {
     width: 200px;
+}
+
+html {
+    font-family: "Bitcount Grid Double";
+    background-color: pink;
+   
+
 }
