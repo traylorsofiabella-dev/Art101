@@ -1,0 +1,65 @@
+html {
+    background-color: rgb(87, 168, 105);
+
+}
+
+body {
+    background-image: url("grass background.webp");
+    background-size: cover;
+
+
+    p {
+        text-align: center;
+        padding: 20px;
+        font-family: fantasy;
+
+    }
+}
+
+#rainbow {
+    position: absolute;
+    width: 400px;
+    right: 100px;
+    top: 200px;
+}
+
+
+.highlight_01 {
+    background-color: #c3d0fc;
+}
+
+
+.Main {
+    display: flex;
+    gap: 30px;
+    flex: 2;
+}
+
+#unicorn-friend {
+    position: absolute;
+    width: 350px;
+    left: 600px;
+    top: 330px;
+
+}
+
+#unicorn-rainbow-bestie {
+    position: absolute;
+    width: 200px;
+    left: 1200px;
+    top: 390px;
+}
+
+#unicornlaying{
+ position: absolute;
+    width: 300px;
+    left: 55px;
+    top: 525px;
+}
+
+#unicornpegasus { 
+ position: absolute;
+    width: 160px;
+    left: 350px;
+    top: 417px;
+}
