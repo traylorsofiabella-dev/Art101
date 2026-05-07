@@ -2,10 +2,6 @@ let count = 0;
 let colors = ["Orchid", "Coral", "HotPink", "Plum"];
 let colorCount;
 
-let pencil = {
-    color: "Yellow",
-    isSharp: false,
-};
 
 $("#needy-button").click(function () {
 
@@ -13,13 +9,13 @@ $("#needy-button").click(function () {
 
     colorCount = count - 1;
 
-    $("#needy-button").html("You floofed me " + count + " times and your favourite color today is: " + colors[colorCount]);
+    $("#needy-button").html("Click: " + count + " Color: " + colors[colorCount]);
 
     $("#needy-button").css("background-color", colors[colorCount]);
 
     $("html").css("background-color", colors[colorCount + 1]);
 
-    console.log(pencil.color);
+  if (count==4) { count=0; }
 
     // things to try out:
     // make the page background color two colors ahead of the button color
