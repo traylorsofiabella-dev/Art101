@@ -24,16 +24,27 @@ async function getRandomName() {
    return nameRandom;
 }
 
+async function getRandomColor() {
+   // goes and grabs some data from an api
+   const response = await fetch( "https://api.gofakeit.com/funcs/hexcolor", {method: "GET",});
+   // cov\nverts the response into plaoin text
+   const colorRandom = await response.text();
+    
+   console.log("Got color:", colorRandom);
+   return colorRandom;
+}
+
 
 // random creature
 async function randomizeCreature() {
 
     const eyesRandom= Math.floor(Math.random() * 5) +1;
     const nameRandom= await getRandomName();
+    const colorRandom= await getRandomColor();
 
     const randomCreature = {
         name: nameRandom,
-        color: "lime",
+        color: colorRandom,
         eyesNum: eyesRandom,
     };
     return randomCreature;
