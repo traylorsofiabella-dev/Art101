@@ -1,52 +1,19 @@
-// declaring variables 
-
 let count = 0;
 let colors = ["Orchid", "Coral", "HotPink", "Plum"]; 
-let colorCount=0;
-let mood="neutral";
-
-// reusable functions
-
-function makeImage( colorToMatch ) { 
-    // what the function actually does
-    if ( colors[colorCount]== colorToMatch ) {
-        $("body").append("<img width=100 src='"+colorToMatch+".jpg'>");
-    }
-} 
-
-function paintPage( colorToPaint ) {
-  $("body").css("background-color", colorToPaint);
-}
-
-// what happens when the orchid image is clicked
-
-$("#Orchid").click(function () { 
-   console.log("orchid is clicked");
-   paintPage( "Orchid");
-});
-$("#Plum").click(function () { 
-   console.log("orchid is clicked");
-   paintPage( "Plum");
-});
-$("#Coral").click(function () { 
-   console.log("orchid is clicked");
-   paintPage( "Coral");
-});
-
-// what happens when the main button is clicked
+let colorCounter=0;
 
 $("#needy-button").click(function () { 
  
 count = count + 1;
-
-
-console.log("color count "+colorCount);
+colorCount=count-1;
 
   $("#needy-button").html( "Clicks: " + count + " Color: " + colors[colorCount] );
-
-  paintPage( colors[colorCount] );
+   $("body").css("background-color", colors[colorCount]);
    
-
+   if (count==4) { 
+        count=0;  
+        console.log("it happened");
+    }
 
    if (colors[colorCount] == "HotPink") { 
         $("#needy-button").after(" notPink ");
@@ -58,21 +25,6 @@ console.log("color count "+colorCount);
       $("#needy-button").after(" all other colors ");
     }
 
-    if (count < 5) { mood="fresh and happy"; }
-    else if ( count >= 5 && count < 10) {mood="keep pushing";}
-    else { mood="so tired";}
 
-    makeImage("Orchid");
-    makeImage("Plum");
-    makeImage("Coral");
 
-    colorCount=colorCount+1;
-   
-    if (colorCount==4) { 
-        colorCount=0;  
-        console.log("it happened");
-    }
-
-    console.log(mood);
-
-}); 
+});
